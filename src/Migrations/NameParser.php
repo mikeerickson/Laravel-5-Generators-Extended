@@ -1,6 +1,4 @@
-<?php
-
-namespace Laracasts\Generators\Migrations;
+<?php namespace CodeDungeon\Addons\Migrations;
 
 class NameParser
 {

@@ -1,6 +1,4 @@
-<?php
-
-namespace spec\Laracasts\Generators\Migrations;
+<?php namespace spec\CodeDungeon\Addons\Migrations;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +7,7 @@ class SchemaParserSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('Laracasts\Generators\Migrations\SchemaParser');
+        $this->shouldHaveType('CodeDungeon\Addons\Migrations\SchemaParser');
     }
 
     function it_parses_a_basic_string_schema()

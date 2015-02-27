@@ -1,13 +1,13 @@
 <?php
 
-namespace Laracasts\Generators\Commands;
+namespace CodeDungeon\Addons\Commands;
 
 use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use Laracasts\Generators\Migrations\NameParser;
-use Laracasts\Generators\Migrations\SchemaParser;
-use Laracasts\Generators\Migrations\SyntaxBuilder;
+use CodeDungeon\Addons\Migrations\NameParser;
+use CodeDungeon\Addons\Migrations\SchemaParser;
+use CodeDungeon\Addons\Migrations\SyntaxBuilder;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 

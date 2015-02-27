@@ -1,6 +1,4 @@
-<?php
-
-namespace spec\Laracasts\Generators\Migrations;
+<?php namespace spec\CodeDungeon\Addons\Migrations;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -9,7 +7,7 @@ class NameParserSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('Laracasts\Generators\Migrations\NameParser');
+        $this->shouldHaveType('CodeDungeon\Addons\Migrations\NameParser');
     }
 
     function it_parses_a_migration_name_into_an_array()

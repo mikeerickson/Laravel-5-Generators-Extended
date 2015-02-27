@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: Laracasts\Generators
-        psr4_prefix: Laracasts\Generators
+        namespace: CodeDungeon\Addons
+        psr4_prefix: CodeDungeon\Addons
         src_path: src

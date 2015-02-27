@@ -1,8 +1,6 @@
-<?php
+<?php namespace CodeDungeon\Addons\Migrations;
 
-namespace Laracasts\Generators\Migrations;
-
-use Laracasts\Generators\GeneratorException;
+use CodeDungeon\Addons\AddonException;
 
 class SyntaxBuilder
 {

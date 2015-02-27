@@ -1,6 +1,6 @@
 <?php
 
-namespace Laracasts\Generators\Commands;
+namespace CodeDungeon\Addons\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputArgument;

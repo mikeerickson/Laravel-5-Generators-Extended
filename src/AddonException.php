@@ -1,8 +1,8 @@
 <?php
 
-namespace Laracasts\Generators;
+namespace CodeDungeon\Addons;
 
-class GeneratorException extends \Exception {
+class AddonException extends \Exception {
 
     /**
      * The exception description.

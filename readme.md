@@ -1,11 +1,10 @@
-# Laravel 5 Extended Generators
+# Laravel 5 Artisan Addons
 
-[![Build Status](https://travis-ci.org/laracasts/Laravel-5-Generators-Extended.svg?branch=master)](https://travis-ci.org/laracasts/Laravel-5-Generators-Extended)
+[![Build Status](https://travis-ci.org/CodeDungeon/Laravel-Artisan-Addons.svg?branch=master)](https://travis-ci.org/codedungeon/Laravel-Artisan-Addons)
 
-If you're familiar with my [Laravel 4 Generators](https://github.com/JeffreyWay/Laravel-4-Generators), then this is basically the same thing - just upgraded for Laravel 5.
+Extend Laravel Artisan Commands with some new addons
 
-L5 includes a bunch of generators out of the box, so this package only needs to add a few things, like:
-
+Laravel Artisan includes an array of commands to improve your development workflow.
 - `make:migration:schema`
 - `make:migration:pivot`
 - `make:seed`
@@ -17,7 +16,7 @@ L5 includes a bunch of generators out of the box, so this package only needs to 
 ### Step 1: Install Through Composer
 
 ```
-composer require 'laracasts/generators' --dev
+composer require 'codedungeon/addons' --dev
 ```
 
 ### Step 2: Add the Service Provider
@@ -25,7 +24,7 @@ composer require 'laracasts/generators' --dev
 Open `config/app.php` and, to your "providers" array at the bottom, add:
 
 ```
-"Laracasts\Generators\GeneratorsServiceProvider"
+"CodeDungeon\Addons\AddonsServiceProvider"
 ```
 
 ### Step 3: Run Artisan!
@@ -229,15 +228,4 @@ This one is fairly basic. It just gives you a quick seeder class in the "databas
 
 use Illuminate\Database\Seeder;
 
-// composer require laracasts/testdummy
-use Laracasts\TestDummy\Factory as TestDummy;
 
-class PostsTableSeeder extends Seeder {
-
-	public function run()
-	{
-        // TestDummy::times(20)->create('App\Post');
-	}
-
-}
-```

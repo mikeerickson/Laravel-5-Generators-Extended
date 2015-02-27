@@ -1,12 +1,12 @@
 {
-  "name": "laracasts/generators",
-  "description": "Extend Laravel 5's generators.",
-  "keywords": ["laravel", "generators"],
+  "name": "codedungeon/artisan-addons",
+  "description": "Extend Laravel 5 Artisan Commands.",
+  "keywords": ["laravel", "generators", "artisan", "addons"],
   "license": "MIT",
   "authors": [
     {
-      "name": "Jeffrey Way",
-      "email": "jeffrey@laracasts.com"
+      "name": "Mike Erickson",
+      "email": "codedungeon@gmail.com"
     }
   ],
   "require": {
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Laracasts\\Generators\\": "src/"
+      "CodeDungeon\\Addons\\": "src/"
     }
   }
 }

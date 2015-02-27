@@ -1,10 +1,10 @@
 <?php
 
-namespace Laracasts\Generators;
+namespace CodeDungeon\Addons;
 
 use Illuminate\Support\ServiceProvider;
 
-class GeneratorsServiceProvider extends ServiceProvider {
+class AddonsServiceProvider extends ServiceProvider {
 
 	/**
 	 * Bootstrap the application services.
@@ -33,11 +33,11 @@ class GeneratorsServiceProvider extends ServiceProvider {
 	 */
 	private function registerSeedGenerator()
 	{
-		$this->app->singleton('command.laracasts.seed', function ($app) {
-			return $app['Laracasts\Generators\Commands\SeedMakeCommand'];
+		$this->app->singleton('command.codedungeon.seed', function ($app) {
+			return $app['CodeDungeon\Addons\Commands\SeedMakeCommand'];
 		});
 
-		$this->commands('command.laracasts.seed');
+		$this->commands('command.codedungeon.seed');
 	}
 
 	/**
@@ -45,11 +45,11 @@ class GeneratorsServiceProvider extends ServiceProvider {
 	 */
 	private function registerMigrationGenerator()
 	{
-		$this->app->singleton('command.laracasts.migrate', function ($app) {
-			return $app['Laracasts\Generators\Commands\MigrationMakeCommand'];
+		$this->app->singleton('command.codedungeon.migrate', function ($app) {
+			return $app['CodeDungeon\Addons\Commands\MigrationMakeCommand'];
 		});
 
-		$this->commands('command.laracasts.migrate');
+		$this->commands('command.codedungeon.migrate');
 	}
 
 	/**
@@ -57,11 +57,11 @@ class GeneratorsServiceProvider extends ServiceProvider {
 	 */
 	private function registerPivotMigrationGenerator()
 	{
-		$this->app->singleton('command.laracasts.migrate.pivot', function ($app) {
-			return $app['Laracasts\Generators\Commands\PivotMigrationMakeCommand'];
+		$this->app->singleton('command.codedungeon.migrate.pivot', function ($app) {
+			return $app['CodeDungeon\Addons\Commands\PivotMigrationMakeCommand'];
 		});
 
-		$this->commands('command.laracasts.migrate.pivot');
+		$this->commands('command.codedungeon.migrate.pivot');
 	}
 
 }
